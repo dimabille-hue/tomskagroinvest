@@ -1,0 +1,87 @@
+.error404-page{
+
+	padding:120px 0;
+
+	text-align:center;
+
+}
+
+.error404-number{
+
+	font-size:170px;
+
+	font-weight:800;
+
+	line-height:1;
+
+	color:#2d8f4e;
+
+}
+
+.error404-page h1{
+
+	margin:20px 0;
+
+	font-size:48px;
+
+	color:#183b29;
+
+}
+
+.error404-page p{
+
+	max-width:700px;
+
+	margin:0 auto 40px;
+
+	color:#666;
+
+	font-size:20px;
+
+}
+
+.error-links{
+
+	display:flex;
+
+	flex-wrap:wrap;
+
+	justify-content:center;
+
+	gap:18px;
+
+	margin-top:45px;
+
+}
+
+.error-links a{
+
+	padding:14px 22px;
+
+	background:#f4f6f5;
+
+	border-radius:10px;
+
+	text-decoration:none;
+
+	color:#183b29;
+
+	transition:.3s;
+
+}
+
+.error-links a:hover{
+
+	background:#2d8f4e;
+
+	color:#fff;
+
+}
+
+.latest-news-404{
+
+	padding:90px 0;
+
+	background:#f7f9f8;
+
+}

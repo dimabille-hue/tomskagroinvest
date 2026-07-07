@@ -1,0 +1,113 @@
+.activities-page{
+
+	padding:90px 0;
+
+}
+
+.activities-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(3,1fr);
+
+	gap:35px;
+
+}
+
+.activity-card{
+
+	background:#fff;
+
+	border-radius:18px;
+
+	padding:40px;
+
+	box-shadow:0 8px 30px rgba(0,0,0,.06);
+
+	transition:.35s;
+
+}
+
+.activity-card:hover{
+
+	transform:translateY(-8px);
+
+	box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.activity-card a{
+
+	text-decoration:none;
+
+	color:inherit;
+
+}
+
+.activity-icon{
+
+	height:90px;
+
+	margin-bottom:25px;
+
+	display:flex;
+
+	align-items:center;
+
+}
+
+.activity-icon img{
+
+	max-height:80px;
+
+	width:auto;
+
+}
+
+.activity-card h2{
+
+	font-size:28px;
+
+	margin-bottom:20px;
+
+	color:#183b29;
+
+}
+
+.activity-text{
+
+	color:#666;
+
+	line-height:1.8;
+
+	margin-bottom:25px;
+
+}
+
+.activity-link{
+
+	color:#2d8f4e;
+
+	font-weight:600;
+
+}
+
+@media(max-width:1100px){
+
+.activities-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.activities-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
