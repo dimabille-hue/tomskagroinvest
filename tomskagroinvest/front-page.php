@@ -14,6 +14,8 @@ get_header();
 
 <?php get_template_part('template-parts/company/company'); ?>
 
+<?php get_template_part('template-parts/news/grid'); ?>
+
 <?php get_template_part('template-parts/documents/grid'); ?>
 
 <?php get_template_part('template-parts/contacts/map'); ?>
