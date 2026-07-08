@@ -1,0 +1,53 @@
+.sitemap{
+
+	padding:80px 0;
+
+}
+
+.sitemap-section{
+
+	margin-bottom:60px;
+
+}
+
+.sitemap-section h2{
+
+	margin-bottom:20px;
+
+	color:#183b29;
+
+	font-size:32px;
+
+}
+
+.sitemap-section ul{
+
+	margin:0;
+
+	padding-left:22px;
+
+}
+
+.sitemap-section li{
+
+	margin-bottom:12px;
+
+}
+
+.sitemap-section a{
+
+	color:#2d8f4e;
+
+	text-decoration:none;
+
+	transition:.3s;
+
+}
+
+.sitemap-section a:hover{
+
+	color:#183b29;
+
+	text-decoration:underline;
+
+}

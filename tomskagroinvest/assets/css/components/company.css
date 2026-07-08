@@ -1,0 +1,129 @@
+/* ==========================================================
+   COMPANY
+========================================================== */
+
+.company{
+
+    padding:100px 0;
+
+    background:#fff;
+}
+
+.company-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.section-subtitle{
+
+    color:#2d8f4e;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+}
+
+.section-title{
+
+    margin:0 0 35px;
+
+    font-size:44px;
+
+    color:#183b29;
+
+    line-height:1.2;
+}
+
+.company-mission{
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:#333;
+
+    margin-bottom:30px;
+}
+
+.company-history{
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.company-image{
+
+    position:relative;
+}
+
+.company-image img{
+
+    display:block;
+
+    width:100%;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+}
+
+@media(max-width:992px){
+
+.company-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.company-image{
+
+order:-1;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.company{
+
+padding:70px 0;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.company-mission{
+
+font-size:17px;
+
+}
+
+}
