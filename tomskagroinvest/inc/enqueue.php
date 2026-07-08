@@ -58,6 +58,18 @@ add_action(
 
 		wp_enqueue_style(
 
+			'tai-home-design',
+
+			TAI_THEME_URI . '/assets/css/home-design.css',
+
+			['tai-main'],
+
+			TAI_THEME_VERSION
+
+		);
+
+		wp_enqueue_style(
+
 			'swiper',
 
 			'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'

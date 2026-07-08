@@ -17,6 +17,11 @@ $button_text = carbon_get_theme_option('company_button_text');
 
 $button_url = carbon_get_theme_option('company_button_url');
 
+$title = $title ?: 'О компании';
+$mission = $mission ?: 'АО «ТомскАгроИнвест» — компания, которая более 20 лет способствует развитию агропромышленного комплекса Томской области, обеспечивая инфраструктурную поддержку бизнеса и жителей региона.';
+$button_text = $button_text ?: 'Подробнее о компании';
+$button_url = $button_url ?: home_url('/company/');
+
 ?>
 
 <section class="company">
@@ -89,19 +94,12 @@ $button_url = carbon_get_theme_option('company_button_url');
 			</div>
 
 			<div class="company-image">
-
-				<?php
-
-				if ($image) {
-
-					echo wp_get_attachment_image(
-						$image,
-						'large'
-					);
-
-				}
-
-				?>
+				<div class="company-stats">
+					<div><strong>20+</strong><span>лет работы</span></div>
+					<div><strong>500+</strong><span>арендаторов и партнеров</span></div>
+					<div><strong>10 000+</strong><span>посетителей ежедневно</span></div>
+					<div><strong>100+</strong><span>мероприятий в год</span></div>
+				</div>
 
 			</div>
 

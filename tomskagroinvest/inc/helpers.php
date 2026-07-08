@@ -213,3 +213,28 @@ function tai_post_meta($post_id, $key, $default = '')
 
 	return $value !== '' ? $value : $default;
 }
+
+function tai_primary_menu_fallback($args = [])
+{
+	$items = [
+		home_url('/company/') => 'О компании',
+		home_url('/activities/') => 'Направления деятельности',
+		home_url('/news/') => 'Новости',
+		home_url('/documents/') => 'Документы',
+		home_url('/contacts/') => 'Контакты',
+	];
+
+	$menu_class = $args['menu_class'] ?? 'main-menu';
+
+	echo '<ul class="' . esc_attr($menu_class) . '">';
+
+	foreach ($items as $url => $label) {
+		printf(
+			'<li><a href="%s">%s</a></li>',
+			esc_url($url),
+			esc_html($label)
+		);
+	}
+
+	echo '</ul>';
+}

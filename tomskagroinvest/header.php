@@ -217,7 +217,7 @@ $banner_link = tai_option('header_banner_link');
 
 			'menu_class' => 'main-menu',
 
-			'fallback_cb' => false
+			'fallback_cb' => 'tai_primary_menu_fallback'
 
 		]);
 
@@ -269,17 +269,17 @@ $banner_link = tai_option('header_banner_link');
 
 		<?php
 
-		wp_nav_menu([
+			wp_nav_menu([
 
-			'theme_location' => 'primary',
+				'theme_location' => 'primary',
 
-			'container' => false,
+				'container' => false,
 
-			'menu_class' => 'mobile-nav',
+				'menu_class' => 'mobile-nav',
 
-			'fallback_cb' => false
+				'fallback_cb' => 'tai_primary_menu_fallback'
 
-		]);
+			]);
 
 		?>
 

@@ -7,7 +7,15 @@ if (!defined('ABSPATH')) {
 $slides = carbon_get_theme_option('hero_slides');
 
 if (empty($slides)) {
-	return;
+	$slides = [
+		[
+			'image' => '',
+			'title' => 'Развитие агропромышленной инфраструктуры Томской области',
+			'text' => 'Создаем условия для устойчивого развития сельского хозяйства, торговли и обеспечения продовольственной безопасности региона.',
+			'button_text' => 'Направления деятельности',
+			'button_url' => home_url('/activities/'),
+		],
+	];
 }
 
 ?>
@@ -93,11 +101,11 @@ if (empty($slides)) {
 							<?php endif; ?>
 
 							<a
-								href="<?php echo esc_url(home_url('/projects/')); ?>"
+								href="<?php echo esc_url(home_url('/documents/')); ?>"
 								class="btn btn-outline"
 							>
 
-								Инвестиционные проекты
+								Документы
 
 							</a>
 
