@@ -26,8 +26,6 @@ $includes = [
 
 	'/inc/search.php',
 
-	'/inc/sitemap.php',
-
 	'/inc/security.php',
 
 	'/inc/svg.php',
