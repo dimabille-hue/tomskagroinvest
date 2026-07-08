@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 }
 
 $news_query = new WP_Query([
-	'post_type' => 'post',
+	'post_type' => ['post', 'events'],
 	'posts_per_page' => 4,
 	'post_status' => 'publish',
 	'orderby' => 'date',
