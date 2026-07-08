@@ -20,3 +20,5 @@ require_once __DIR__ . '/post-meta/events.php';
 require_once __DIR__ . '/post-meta/activities.php';
 require_once __DIR__ . '/post-meta/partners.php';
 require_once __DIR__ . '/post-meta/employees.php';
+require_once __DIR__ . '/post-meta/buildings.php';
+require_once __DIR__ . '/post-meta/premises.php';

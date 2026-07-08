@@ -424,3 +424,7 @@ body.home {
 	background: #f7f8f4;
 	color: #50645c;
 }
+
+.mobile-menu-toggle {
+	pointer-events: auto;
+}

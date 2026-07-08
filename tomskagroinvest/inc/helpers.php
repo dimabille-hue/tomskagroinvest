@@ -218,6 +218,7 @@ function tai_primary_menu_fallback($args = [])
 {
 	$company_page = get_page_by_path('company');
 	$contacts_page = get_page_by_path('contacts');
+	$tenants_page = get_page_by_path('tenants');
 	$news_page = get_option('page_for_posts');
 
 	$items = [
@@ -225,6 +226,7 @@ function tai_primary_menu_fallback($args = [])
 		get_post_type_archive_link('activities') ?: home_url('/#activities') => 'Направления деятельности',
 		$news_page ? get_permalink($news_page) : home_url('/news/') => 'Новости',
 		get_post_type_archive_link('documents') ?: home_url('/#documents') => 'Документы',
+		$tenants_page ? get_permalink($tenants_page) : home_url('/tenants/') => 'Арендаторам',
 		$contacts_page ? get_permalink($contacts_page) : home_url('/#contacts') => 'Контакты',
 	];
 

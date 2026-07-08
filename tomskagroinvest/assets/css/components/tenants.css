@@ -1,0 +1,176 @@
+.tenants-page {
+	padding: 56px 0;
+	background: #f8f9f7;
+}
+
+.tenants-page__header {
+	max-width: 780px;
+	margin-bottom: 32px;
+}
+
+.tenants-filter {
+	display: grid;
+	grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(140px, 1fr)) auto auto;
+	gap: 14px;
+	align-items: end;
+	padding: 20px;
+	margin-bottom: 32px;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 10px 30px rgba(20, 53, 43, .08);
+}
+
+.tenants-filter label,
+.tenants-filter span {
+	display: block;
+}
+
+.tenants-filter span {
+	margin-bottom: 8px;
+	font-weight: 700;
+	color: #0b3028;
+}
+
+.tenants-filter input,
+.tenants-filter select {
+	width: 100%;
+	min-height: 48px;
+	padding: 10px 12px;
+	border: 1px solid #d8e2dc;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.tenants-building {
+	margin-bottom: 28px;
+	padding: 26px;
+	border-radius: 16px;
+	background: #fff;
+	box-shadow: 0 10px 30px rgba(20, 53, 43, .08);
+}
+
+.tenants-building__summary {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 22px;
+}
+
+.tenants-building__summary h2 {
+	margin: 0 0 8px;
+	color: #075139;
+}
+
+.tenants-building__summary p {
+	margin: 0;
+	color: #53645f;
+}
+
+.tenants-building__summary span {
+	align-self: start;
+	padding: 8px 12px;
+	border-radius: 999px;
+	background: #edf7ef;
+	color: #007a3d;
+	font-weight: 700;
+}
+
+.premises-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.premise-card {
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	gap: 18px;
+	padding: 16px;
+	border: 1px solid #e1e9e4;
+	border-radius: 12px;
+}
+
+.premise-card__image {
+	display: block;
+	min-height: 160px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #edf3ee;
+}
+
+.premise-card__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.premise-card h3 {
+	margin: 0 0 12px;
+	font-size: 20px;
+}
+
+.premise-card h3 a {
+	color: #0b3028;
+	text-decoration: none;
+}
+
+.premise-card__params {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+	margin: 0 0 14px;
+	padding: 0;
+	list-style: none;
+}
+
+.premise-card__params li {
+	padding: 10px;
+	border-radius: 8px;
+	background: #f6f8f4;
+}
+
+.premise-card__params strong,
+.premise-card__params span {
+	display: block;
+}
+
+.premise-card__params span {
+	font-size: 13px;
+	color: #67766f;
+}
+
+.premise-card__excerpt {
+	color: #50645c;
+}
+
+.premise-card__docs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.premise-card__docs a {
+	padding: 8px 10px;
+	border: 1px solid #007a3d;
+	border-radius: 8px;
+	color: #007a3d;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.tenants-building__empty {
+	margin: 0;
+	padding: 18px;
+	border-radius: 10px;
+	background: #f6f8f4;
+	color: #50645c;
+}
+
+@media (max-width: 1100px) {
+	.tenants-filter,
+	.premises-list,
+	.premise-card {
+		grid-template-columns: 1fr;
+	}
+}

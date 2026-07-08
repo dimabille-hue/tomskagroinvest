@@ -11,6 +11,8 @@ $theme_files = [
 	'/inc/cpt/activities.php',
 	'/inc/cpt/partners.php',
 	'/inc/cpt/employees.php',
+	'/inc/cpt/buildings.php',
+	'/inc/cpt/premises.php',
 	'/inc/carbon-fields/carbon-fields.php',
 ];
 
