@@ -12,10 +12,6 @@ $news_query = new WP_Query([
 	'order' => 'DESC',
 ]);
 
-if (!$news_query->have_posts()) {
-	return;
-}
-
 $news_page_id = get_option('page_for_posts');
 $news_url = $news_page_id ? get_permalink($news_page_id) : home_url('/news/');
 
@@ -27,11 +23,36 @@ $news_url = $news_page_id ? get_permalink($news_page_id) : home_url('/news/');
 			<h2>Новости</h2>
 			<a class="section-link" href="<?php echo esc_url($news_url); ?>">Все новости</a>
 		</div>
-		<div class="news-grid__items">
-			<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-				<?php get_template_part('template-parts/news/card'); ?>
-			<?php endwhile; ?>
-		</div>
+
+		<?php if ($news_query->have_posts()) : ?>
+			<div class="news-grid__items">
+				<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+					<article <?php post_class('news-card'); ?>>
+						<a class="news-card__image" href="<?php the_permalink(); ?>">
+							<?php tai_thumbnail('news-card'); ?>
+						</a>
+
+						<div class="news-card__body">
+							<div class="news-card__date">
+								<?php echo esc_html(tai_date()); ?>
+							</div>
+
+							<h3>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h3>
+
+							<div class="news-card__excerpt">
+								<?php echo esc_html(wp_trim_words(get_the_excerpt(), 18)); ?>
+							</div>
+						</div>
+					</article>
+				<?php endwhile; ?>
+			</div>
+		<?php else : ?>
+			<p class="news-grid__empty">Новости скоро появятся.</p>
+		<?php endif; ?>
 	</div>
 </section>
 

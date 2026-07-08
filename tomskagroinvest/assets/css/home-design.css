@@ -416,3 +416,11 @@ body.home {
 		grid-template-columns: 1fr;
 	}
 }
+
+.news-grid__empty {
+	margin: 0;
+	padding: 24px;
+	border-radius: 10px;
+	background: #f7f8f4;
+	color: #50645c;
+}
