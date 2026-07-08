@@ -1,0 +1,31 @@
+.accessibility-mode body {
+	background: #fff !important;
+	color: #000 !important;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+.accessibility-mode a,
+.accessibility-mode button {
+	color: #000 !important;
+}
+
+.accessibility-mode img {
+	filter: grayscale(100%);
+}
+
+.accessibility-mode .site-header,
+.accessibility-mode .site-footer,
+.accessibility-mode .top-banner {
+	background: #fff !important;
+	color: #000 !important;
+	box-shadow: none !important;
+	border-color: #000 !important;
+}
+
+.accessibility-mode .btn,
+.accessibility-mode .accessibility-toggle {
+	background: #000 !important;
+	color: #fff !important;
+	border: 2px solid #000 !important;
+}

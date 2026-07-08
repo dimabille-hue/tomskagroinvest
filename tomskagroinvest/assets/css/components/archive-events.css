@@ -1,0 +1,35 @@
+.news-page{
+
+	padding:90px 0;
+
+}
+
+.news-page .news-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(3,1fr);
+
+	gap:32px;
+
+}
+
+@media(max-width:1100px){
+
+.news-page .news-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.news-page .news-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
